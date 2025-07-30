@@ -1,3 +1,8 @@
+//Habilitando o modo estrito
+'use strict';
+
+let teste = 'Senac';
+
 /*Execicio
   Crie uma variavel chamada "uc" e coloque o da UC que estamos
   crie uma variavel chamda "competencia" e coloque nela uma frase que represente o que estamos estudanso nesta uc.
