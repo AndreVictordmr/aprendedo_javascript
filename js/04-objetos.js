@@ -31,4 +31,25 @@ console.log(livro.titulo);
 /*Para acessar algum dos volumes, primeros acessamos a propriedade(volumes) do objeto, entao usamos o colchetes com indice pois se trata de um array*/
 console.log(livro.volumes[1]);
 
+// Exemplo 3 : array de objetos
+console.log('\nExemplo 3\n');
+const livros = [
+    {
+        titulo: 'O Assassino no Expresso do Oriente',
+        autor: 'Agatha Christie'
+    },
+    {
+        titulo:"Crepúsculo",
+        autor: 'Stephanie Myers'
+    },
+    {
+        titulo:'One Piece',
+        autor:'Eiichiro Oda'
+    }
+];
+console.log(livros);
+console.log(livros[2].titulo);
+
+
+
 
