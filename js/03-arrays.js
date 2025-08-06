@@ -33,8 +33,8 @@ const tecnologiais=[
 //console.log(tecnologiais);
 console.log(tecnologiais[0][2]);//JavaScript
 console.log(tecnologiais[1][0]);//Figma
-console.log(tecnologiais[2][3]);//Figma
-console.log('---');//Figma
+console.log(tecnologiais[2][3]);//Express
+console.log('---');
 for(let i=0;i< tecnologiais.length;i++){
     for(let v=0;v < tecnologiais[i].length;v++){
         console.log(tecnologiais[i][v]);
