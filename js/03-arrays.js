@@ -24,7 +24,21 @@ let mangas = ['One piece','Naruto','Eyeshild 21','Chainsaw Man','Spy Family','My
 let exibe =[1,4,6];
 exibe.forEach((i) => console.log(`Estes sao algum mangas que eu gosto ${mangas[i]}`)
 );
-
-
-
+/*Array como Matriz de 2 Dimençoes */
+const tecnologiais=[
+    ["HTML","CSS","JAVASCRIPT"],
+    ['Figma','Photoshop'],
+    ['PHP','Node.js','SQL','Express']
+];
+//console.log(tecnologiais);
+console.log(tecnologiais[0][2]);//JavaScript
+console.log(tecnologiais[1][0]);//Figma
+console.log(tecnologiais[2][3]);//Figma
+console.log('---');//Figma
+for(let i=0;i< tecnologiais.length;i++){
+    for(let v=0;v < tecnologiais[i].length;v++){
+        console.log(tecnologiais[i][v]);
+    }
+    console.log('---')
+}
 
