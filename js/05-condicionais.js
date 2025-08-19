@@ -66,5 +66,7 @@ if(media >9){
 }
 
 console.log('\nExemplo 4');
-
-
+//Condicional Compostas com operador Ternário  (condiçao ? verdadeiro : falso)
+let estatus = idade >= 18 ? "Maior" : "Menor";
+console.log(estatus);
+    
