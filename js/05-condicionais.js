@@ -38,11 +38,33 @@ DICA: você deve SOMAR as duas notas e DEPOIS dividir por 2.
 3. Programe uma condicional que verifique o valor da média calculada. Se a média for maior/igual a 7, mostre "aprovado". 
 Caso contrário, mostre "reprovado". */
 
-let nota1 = 7.45,nota2 = 6.55;
+let nota1 = 7.45,nota2 = 6.6;
 let media = (nota1+nota2)/2; 
-console.log("Media: "+media);
+console.log("Media: "+parseFloat(media.toFixed(2)));
 if(media >= 7){
     console.log("Aprovado");
 }else{
     console.log("Reprovado");
 }
+
+console.log("\nExemplo 3");
+/*Condional Encadeada/Sucessiva 
+Verificando o desempenho do aluno conforme a média:
+-Média acima de 9? otimo 
+-Média acima de 7? bom
+-Média acima de 5? ruim
+-Média até 5? péssimo
+*/
+if(media >9){
+    console.log("ÓTIMO!");
+}else if(media > 7){
+    console.log("BOM!");
+}else if(media > 5){
+    console.log("RUIM!");
+}else{
+    console.log("PÉSSIMO!");
+}
+
+console.log('\nExemplo 4');
+
+
