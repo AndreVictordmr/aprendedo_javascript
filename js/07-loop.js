@@ -57,3 +57,46 @@ const pessoas ={
 for(const prop in pessoas){
     console.log(pessoas[prop]);
 }
+
+console.log("\nExercicio");
+
+/*
+1. Faça um array chamado "clientes" contendo 3 objetos.
+ 
+Cada objeto deverá ter uma propriedade "identificador" (com valores 1, 2 e 3) e uma propriedade "nome" (com os nomes dos clientes: "Dio", "Ozzy" e "Ian").
+ 
+2. Faça um loop (qualquer um dos que vimos) e mostre no console os dados de cada cliente conforme a seguir:
+ 
+- Cliente: Dio, id: 1
+- Cliente: Ozzy, id: 2
+- Cliente: Ian, id: 3
+*/
+
+const clientes =[
+        {
+            indetificador:1,
+            nome: "Dio",
+        },
+        {
+            indetificador:2,
+            nome:"Ozzy"
+        },
+        {
+            indetificador:3,
+            nome:"Ian"
+        }
+    ];
+
+for(let x =0;x<clientes.length;x++){
+    console.log(`Cliente: ${clientes[x].nome}, id : ${clientes[x].indetificador}`);
+}
+console.log("\nCom For/of");
+for(let x of clientes){
+    console.log(`Cliente: ${x.nome}, id : ${x.indetificador}`);
+}
+console.log("\nCom While");
+let c=0
+while(c<3){
+    console.log(`Cliente: ${clientes[c].nome}, Id: ${clientes[c].indetificador}`);
+    c++;
+}
