@@ -14,7 +14,14 @@ console.log("Exemplo 1: WHILE(Enquanto)");
 let x = 1;
 
 while (x <= 5) {
-    console.log("Contagem regressiva: "+x);
-    x++;// = contador = contador +1;
+    console.log("Contagem : "+x);
+    x++;// = x = x +1;
+}
+
+console.log("\nExemplo 2: FOR (para)");
+
+/*for(iniciar variavel;condiçao,atualização ) */
+for(let i=1;i<=10;i++){
+    console.log("i vale: "+i);
 }
 
