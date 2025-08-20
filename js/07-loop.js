@@ -37,3 +37,11 @@ const videoGames = ["Ps5","Xbox One","switch 2","steam deck"] ;
 for(let l=0; l<videoGames.length;l++){
     console.log(videoGames[l]);
 }
+
+console.log("\n---\n");
+
+// Usando loop for/of(esclusivo do js)
+// usamos um var/const(plataformas) para acessar cada elemento do array(no caso videoGame)
+for(const plataformas of videoGames){
+    console.log(plataformas);
+}
