@@ -45,3 +45,15 @@ console.log("\n---\n");
 for(const plataformas of videoGames){
     console.log(plataformas);
 }
+
+console.log("\nExemplo 5: loops e objetos");
+const pessoas ={
+    nome:'tim',
+    idade: 20,
+    cidade:"São Paulo",
+    estado:"SP"
+};
+// usando o loop For/in para objetos(exclusivos do JS)
+for(const prop in pessoas){
+    console.log(pessoas[prop]);
+}
