@@ -29,3 +29,11 @@ console.log("\nExemplo 3: loop regressivo");
 for(let m=10;m>=1;m--){
     console.log("Contagem regressiva: "+m);
 }
+
+console.log("\nExemplo 4: loop e array");
+
+const videoGames = ["Ps5","Xbox One","switch 2","steam deck"] ;
+
+for(let l=0; l<videoGames.length;l++){
+    console.log(videoGames[l]);
+}
