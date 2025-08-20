@@ -25,3 +25,7 @@ for(let i=1;i<=10;i++){
     console.log("i vale: "+i);
 }
 
+console.log("\nExemplo 3: loop regressivo");
+for(let m=10;m>=1;m--){
+    console.log("Contagem regressiva: "+m);
+}
