@@ -73,19 +73,19 @@ Cada objeto deverá ter uma propriedade "identificador" (com valores 1, 2 e 3) e
 */
 
 const clientes =[
-        {
-            indetificador:1,
-            nome: "Dio",
-        },
-        {
-            indetificador:2,
-            nome:"Ozzy"
-        },
-        {
-            indetificador:3,
-            nome:"Ian"
-        }
-    ];
+    {
+        indetificador:1,
+        nome: "Dio",
+    },
+    {
+        indetificador:2,
+        nome:"Ozzy"
+    },
+    {
+        indetificador:3,
+        nome:"Ian"
+    }
+];
 
 for(let x =0;x<clientes.length;x++){
     console.log(`Cliente: ${clientes[x].nome}, id : ${clientes[x].indetificador}`);
