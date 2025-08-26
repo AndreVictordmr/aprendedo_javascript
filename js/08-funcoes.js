@@ -70,3 +70,20 @@ const soma = (valor1,valor2)=>valor1+valor2;
 ;
 
 console.log(soma(150,500));
+
+console.log("\nExemplo 7: Formatando valor monetario");
+let preco = 5000;
+let desconto = preco * 0.10;//10%
+let precof= preco - desconto;
+
+function formatarMoeda(valor){
+    return new Intl.NumberFormat("pt-br",{style:"currency",currency:"BRL"}).format(valor);
+}
+
+console.log("Preço original: "+formatarMoeda(preco));
+console.log("desconto: "+formatarMoeda(desconto));
+console.log("Preço final: "+formatarMoeda(precof));
+console.log("\n")
+//Exemplo: usando recurso da classe Intl(Internacionalização)
+const exemplo = new Intl.NumberFormat("pt-br",{style:"currency",currency:"BRL"}).format(preco);
+console.log(exemplo);
