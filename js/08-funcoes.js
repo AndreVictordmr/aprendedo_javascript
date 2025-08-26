@@ -28,3 +28,10 @@ function exemplo2(){
 }
 
 exemplo2();
+
+console.log("\nExemplo 3: Arrow function");
+//Sintaxe ponteciamente mais simples para funções no JavaScript
+const exemplo3 = () => {
+    console.log("eu sou uma flecha");
+};
+exemplo3();
