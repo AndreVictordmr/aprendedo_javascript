@@ -48,4 +48,14 @@ function saudacao(nome = "Visitante"){
 }
 saudacao("André");
 saudacao();
+//Sempre que houver a necessidade de trabalhar com o resultado do processamento de uma funçao então essa funçao deve ter o return.
+console.log("\nExemplo 5: Função com parâmetro e retorno");
+function multiplicar(valor1,valor2) {
+    return valor1*valor2;
+}
 
+let resultado1 = multiplicar(10,5);
+let resultado2 = multiplicar(200,10);
+
+console.log("Resultado 1 : "+resultado1);
+console.log("Resultado 2 : "+resultado2);
