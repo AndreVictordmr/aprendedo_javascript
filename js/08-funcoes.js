@@ -40,3 +40,12 @@ exemplo3();
 Quando uma função precisa de valores/dados para algum tipo de processamento, ela recebe valores/dados através de parâmetros/argumentos entre os parânteses.
 Geramente, ao terminar o processamento dos dados, a função "retorna" para fora um resultado.*/
 
+console.log("\nExemplo 4: funçao com parametro")
+function saudacao(nome = "Visitante"){
+
+    console.log(`Olá ${nome}`);
+    
+}
+saudacao("André");
+saudacao();
+
