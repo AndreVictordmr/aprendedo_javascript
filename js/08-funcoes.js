@@ -35,3 +35,8 @@ const exemplo3 = () => {
     console.log("eu sou uma flecha");
 };
 exemplo3();
+
+/*Obs.: funções (em qualquer sintaxe) também podem trabalhar com parâmetros/argumentos.
+Quando uma função precisa de valores/dados para algum tipo de processamento, ela recebe valores/dados através de parâmetros/argumentos entre os parânteses.
+Geramente, ao terminar o processamento dos dados, a função "retorna" para fora um resultado.*/
+
