@@ -22,3 +22,9 @@ const exemplo1 = function(){
 //Chamando a funçao
 exemplo1();
 
+console.log("\nExemplo 2: funçao nomeada/Declarada");
+function exemplo2(){
+    console.log("Eu fui declarado dessa vez");   
+}
+
+exemplo2();
