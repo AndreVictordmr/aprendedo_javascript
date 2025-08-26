@@ -59,3 +59,14 @@ let resultado2 = multiplicar(200,10);
 
 console.log("Resultado 1 : "+resultado1);
 console.log("Resultado 2 : "+resultado2);
+
+console.log("\nExemplo 6: Simplificando com Arrow Function");
+
+/* function soma(valor1,valor2){
+        return valor1+valor2;
+}*/ 
+//Arrow function com retorno implicito
+const soma = (valor1,valor2)=>valor1+valor2;
+;
+
+console.log(soma(150,500));
