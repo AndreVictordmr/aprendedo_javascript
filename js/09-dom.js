@@ -48,3 +48,24 @@ normal.addEventListener("click", function(){
     titulo.textContent = "Eventos";
     titulo.classList.remove("titulo");
 });
+
+
+/*Exemplo 3: modo noturno */
+const btn = document.querySelector("#noturno");
+let isEscuro = true;
+const textOrigin = btn.textContent;
+btn.addEventListener("click", function() {
+    
+        pagina.classList.toggle("m_noturno");
+        pagina.style.transition = "1s";
+        if(!isEscuro){
+            
+            btn.textContent = textOrigin;
+            isEscuro=true
+        }else{
+            btn.textContent = "Desativar"
+            isEscuro=false
+        }
+    
+});
+
