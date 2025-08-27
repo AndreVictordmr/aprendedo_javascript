@@ -27,3 +27,24 @@ mensagem01.addEventListener("dblclick",function(){
     mensagem01.textContent = "";//tira um texto
     mensagem01.classList.remove("destaque");//tira uma classe
 });
+
+/*Exercicios
+1 Crie uma constate nova e selecione o h1 da sua pagina 
+2 crie um evento em que, ao passar o mause em cima do h1, o texto mude para "Praticando eventos!" e também fique centralizado
+3 faça também um evento de click para a palavra"Referencia", e o texto do h1 volte para "Evento" e o alinhamento volte a ficar a esquerda */
+
+const titulo=document.querySelector("h1");
+const normal=document.querySelector("#ref");
+
+titulo.addEventListener("mouseover", function(){
+    titulo.textContent = "Praticando Eventos!";
+    //usando class
+    titulo.classList.add("titulo");
+    //usando style inline
+    //titulo.style.textAlign = "center";
+});
+
+normal.addEventListener("click", function(){
+    titulo.textContent = "Eventos";
+    titulo.classList.remove("titulo");
+});
