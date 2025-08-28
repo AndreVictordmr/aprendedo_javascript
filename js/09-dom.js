@@ -66,6 +66,6 @@ btn.addEventListener("click", function() {
             btn.textContent = "Desativar"
             isEscuro=false
         }
-    
+    //setTimeout
 });
 
