@@ -52,19 +52,19 @@ normal.addEventListener("click", function(){
 
 /*Exemplo 3: modo noturno */
 const btn = document.querySelector("#noturno");
-let isEscuro = true;
+let isEscuro = false;
 const textOrigin = btn.textContent;
 btn.addEventListener("click", function() {
     
         pagina.classList.toggle("m_noturno");
         pagina.style.transition = "1s";
-        if(!isEscuro){
+        if(isEscuro){
             
             btn.textContent = textOrigin;
-            isEscuro=true
+            isEscuro=false;
         }else{
             btn.textContent = "Desativar"
-            isEscuro=false
+            isEscuro=true;
         }
     //setTimeout
 });
