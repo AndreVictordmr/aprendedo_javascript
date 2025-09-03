@@ -71,14 +71,23 @@ btn.addEventListener("click", function() {
 
 /*Exemplo 2: Detectando saiada do site */
 const janela = document.querySelector("#sair");
-document.addEventListener("mouseout",function (event) {
-    //detecta o posicionamento do mouse no eixo Y na pagina
-    if(event.clientY < 0){
-        janela.showModal();
-    }
-});
+document.addEventListener("mouseout",dectarMouse);
 
+
+/*Selecionamos o batão existente Dentro da janela ( ja selecionada anteriormente) */
 const janelaSair = janela.querySelector("button");
+//Quando clicarmos no botao fechar, fazemos que a janela feche(close())
 janelaSair.addEventListener("click", function(){
     janela.close();
 });
+
+/*Esta função lida com o evento monitoramento pelo listener no documento.
+
+Se a posiçao Y do mouse for abaixo de 0, ou seja, acima do topo do documento, fazemos a janela ser exebida (showModal()) e desativamos o listener e a propria funçao, garantido que essa rotina funcione somente uma vez*/
+function dectarMouse(event) {
+    //detecta o posicionamento do mouse no eixo Y na pagina
+    if(event.clientY < 0){
+        janela.showModal();
+        document.removeEventListener("mouseout", dectarMouse);
+    }
+}
