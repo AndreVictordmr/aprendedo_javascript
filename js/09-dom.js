@@ -70,4 +70,15 @@ btn.addEventListener("click", function() {
 });
 
 /*Exemplo 2: Detectando saiada do site */
+const janela = document.querySelector("#sair");
+document.addEventListener("mouseout",function (event) {
+    //detecta o posicionamento do mouse no eixo Y na pagina
+    if(event.clientY < 0){
+        janela.showModal();
+    }
+});
 
+const janelaSair = janela.querySelector("button");
+janelaSair.addEventListener("click", function(){
+    janela.close();
+});
