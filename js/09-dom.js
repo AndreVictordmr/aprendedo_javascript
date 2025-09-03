@@ -69,3 +69,5 @@ btn.addEventListener("click", function() {
     //setTimeout(function(),time)
 });
 
+/*Exemplo 2: Detectando saiada do site */
+
